@@ -1,0 +1,324 @@
+#
+t = '<code>'
+    for i in range(0,len(settings1)):
+        if settings1[i] == '/n':
+            t += '<br/>'
+        elif settings1[i] == ' ':
+            t += '&nbsp;'
+        else:
+            t += settings1[i]
+    t += '</code>'
+
+#
+<script>
+        var tag = [], text = [], id = [], array = [], t = '';
+        id = ['settings1', 'wsgi1', 'urls1'];
+        array = document.getElementById(id[0]).textContent;
+        alert(array);
+        element = document.getElementById(id[0] + '_py');
+        tag["h4"] = document.createElement("h4");
+        text = document.createTextNode(id[0] + ".py");
+        tag["h4"].appendChild(text);
+        element.appendChild(tag["h4"]);
+        tag["code"] = document.createElement("code");
+        for (j = 0; j < array.length; j++) {
+            if (array[j] == '`') {
+                t += ' ';
+                text = document.createTextNode(t);
+                tag["code"].appendChild(text);
+                t = '';
+            }
+            else if (array[j] == '~') {
+                text = document.createTextNode(t);
+                tag["code"].appendChild(text);
+                tag['br'] = document.createElement('br');
+                tag["code"].appendChild(tag['br']);
+                t = '';
+            }
+            else if (j == array.length - 1) {
+                text = document.createTextNode(t);
+                tag["code"].appendChild(text);
+            }
+            else {
+                t += array[j];
+            }
+        }
+        element.appendChild(tag["code"]);
+    </script>
+
+#
+t = '<p>'
+    for i in range(0,len(settings1)):
+        if settings1[i] == '\n':
+            t += '</p><p>'
+        elif settings1[i] == ' ':
+            t += '&nbsp;'
+        else:
+            t += settings1[i]
+    settings1 = t + '</p>'
+    
+#
+array = document.getElementById(id[0] + '1').textContent;
+        element = document.getElementById(id[0] + '1' + '_py');
+        element.innerHTML = array;
+        element.id = "box";
+        tag["h3"] = document.createElement("h3");
+        text["h3"] = document.createTextNode(id[0] + ".py");
+        tag["h3"].appendChild(text["h3"]);
+        element.appendChild(tag["h3"]);
+
+#
+for (i = 0; i < id.length; i++) {
+                    array = document.getElementById(id[i] + '1').textContent;
+                    element['py'] = document.getElementById(id[i] + '1' + '_py');
+                    tag["h3"] = document.createElement("h3");
+                    text["h3"] = document.createTextNode(id[i] + ".py");
+                    tag["h3"].appendChild(text["h3"]);
+                    element['py'].appendChild(tag["h3"]);
+                    tag["div"] = document.createElement("div");
+                    tag["div"].innerHTML = array;
+                    element['py'].appendChild(tag["div"]);
+                    element['py'].id = "code";
+                    element['numb'] = document.getElementById(id[i] + '1' + '_numb');
+                }
+
+#
+
+        for (i = 0; i < id.length; i++) {
+            element['py'] = document.getElementById(id[i] + '1' + '_py');
+            tag["h3"] = document.createElement("h3");
+            text["h3"] = document.createTextNode(id[i] + ".py");
+            tag["h3"].appendChild(text["h3"]);
+            tag["p"] = document.createElement("p");
+            tag["p"].type = "submit";
+            tag["p"].id = id[i] + "1_in";
+            tag["p"].class = i.toString();
+            text["p"] = document.createTextNode("more...");
+            tag["p"].appendChild(text["p"]);
+            tag["p"].style.width = "30px";
+            tag["p"].style.height = "20px";
+            tag["p"].addEventListner('click',show);
+            tag["h3"].appendChild(tag["p"]);
+            element['py'].appendChild(tag["h3"]);
+        }
+
+#
+function show(name) {
+            alert(id[name]);
+            tag["input"] = document.getElementById(id[name] + '1' + '_in');
+            value["input"] = tag["input"].value;
+            i = name;
+            element['py'] = document.getElementById(id[i] + '1' + '_py');
+            if (value["input"] == "more...") {
+                array = document.getElementById(id[i] + '1').textContent;
+                tag["div"] = document.createElement("div");
+                tag["div"].innerHTML = array;
+                tag["div"].id = "";
+                element['py'].appendChild(tag["div"]);
+                element['numb'] = document.getElementById(id[i] + '1' + '_numb');
+                tag["input"].value = "less...";
+            }
+            else {
+                tag["div"].innerHTML = " ";
+                tag["input"].value = "more...";
+            }
+        }
+
+#
+t = '<p>'
+        for i in range(0,len(content[array[j]])):
+            if content[array[j]][i] == '\n':
+                t += '</p><p>'
+            elif content[array[j]][i] == ' ':
+                t += '&nbsp;'
+            else:
+                t += content[array[j]][i]
+        content[array[j]] = t + '</p>'
+
+#
+
+    <div id="settings1" style="visibility:hidden">
+        {{ settings1 }}
+    </div>
+    <div id="wsgi1" style="visibility:hidden">
+        {{ wsgi1 }}
+    </div>
+    <div id="urls1" style="visibility:hidden">
+        {{ urls1 }}
+    </div>
+    <div id="settings11" style="visibility:hidden">
+        {{ settings11 }}
+    </div>
+    <div id="wsgi11" style="visibility:hidden">
+        {{ wsgi11 }}
+    </div>
+    <div id="urls11" style="visibility:hidden">
+        {{ urls11 }}
+    </div>
+    <script>
+        function equalToArray(arrayE) {
+            arraysE = [];
+            for (i = 0; i < arrayE.length; i++)
+                arraysE[i] = arrayE[i];
+            return arraysE;
+        }
+        var tag = [], text = [], id = [], array = [], arrays = [], element = [], value = [], t = '';
+        id = ['settings', 'wsgi', 'urls'];
+        for (i = 0; i < id.length; i++) {
+            array[id[i]] = document.getElementById(id[i] + '1').textContent;
+            arrays[id[i]] = document.getElementById(id[i] + '11').textContent;
+            alert(arrays[id[i]]);
+            for (j = 0; j < arrays[id[i]].length; j++) {
+                if (arrays[id[i]][j] == '~') {
+                    t += '\n';
+                }
+                else if (arrays[id[i]][j] == '`') {
+                    t += ' ';
+                }
+                else {
+                    t += arrays[id[i]][j];
+                }
+            }
+            arrays[id[i]] = t;
+        }
+        function show(name) {
+            tag["input"] = document.getElementById(id[name] + '1' + '_in');
+            value["input"] = tag["input"].value;
+            i = name;
+            tag['div'] = document.getElementById(id[i] + '1' + '_py');
+            if (value["input"] == "more...") {
+                tag["div"].innerHTML = array[id[i]];
+                tag["input"].value = "less...";
+            }
+            else {
+                tag["div"].innerHTML = " ";
+                tag["input"].value = "more...";
+            }
+        }
+        function copyToClipboard(numb) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(arrays[id[numb]]).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+    </script>
+</body>
+</html>
+
+{% endblock %}
+
+#
+
+def vs(request):
+    """Renders the vs page."""
+    array = ["settings1.py","urls1.py","wsgi1.py"];
+    content = {}
+    for j in range(0, len(array)):
+        with open(file_location + array[j], 'r') as file:
+            content[array[j]] = file.read()
+        t = '<p>'
+        t1 = ''
+        for i in range(0,len(content[array[j]])):
+            if content[array[j]][i] == '\n':
+                t += '</p><p>'
+                t1 += '~'
+            elif content[array[j]][i] == ' ':
+                t += '&nbsp;'
+                t1 += '`'
+            else:
+                t += content[array[j]][i]
+                t1 += content[array[j]][i]
+        content[array[j]] = t + '</p>'
+        content[array[j]+'1'] = t1
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/setup/vs.html',
+        {
+            'title':'Django Web Application Setup',
+            'content':'Django Web Application Setup in Visual Studio 2019',
+            'settings1':content['settings1.py'],
+            'urls1':content['urls1.py'],
+            'wsgi1':content['wsgi1.py'],
+            'settings11':content['settings1.py1'],
+            'urls11':content['urls1.py1'],
+            'wsgi11':content['wsgi1.py1'],
+            'year':datetime.now().year,
+        }
+    )
+
+#
+for j in range(0, len(array)):
+        with open(file_location + array[j], 'r') as file:
+            content[array[j]] = file.read()
+        t = '<p>'
+        for i in range(0,len(content[array[j]])):
+            if content[array[j]][i] == '\n':
+                t += '</p><p>'
+            elif content[array[j]][i] == ' ':
+                t += '&nbsp;'
+            else:
+                t += content[array[j]][i]
+        content[array[j]] = t + '</p>'
+    
+#
+def vs(request):
+    """Renders the vs page."""
+    array = ["settings1.py","urls1.py","wsgi1.py","forms1.py","tests1.py","views1.py","aurls1.py","burls1.py"];
+    content = {}
+    with open(file_location + 'files.py', 'r') as file:
+        files = file.read()
+    i = 0
+    t = '<p>'
+    for j in range(0,len(files)):
+        if files[j]=='~':
+            content[array[i]] = t + '</p>'
+            i += 1
+            t = '<p>'
+        elif files[j]=='\n':
+            t += '</p><p>'
+        elif files[j]==' ':
+            t += '&nbsp;'
+        else:
+            t += files[j]
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/setup/vs.html',
+        {
+            'title':'Django Web Application Setup',
+            'content':'Django Web Application Setup in Visual Studio 2019',
+            'settings1':content['settings1.py'],
+            'urls1':content['urls1.py'],
+            'wsgi1':content['wsgi1.py'],
+            'forms1':content['forms1.py'],
+            'tests1':content['tests1.py'],
+            'views1':content['views1.py'],
+            'aurls1':content['aurls1.py'],
+            'burls1':content['burls1.py'],
+            'year':datetime.now().year,
+        }
+    )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
