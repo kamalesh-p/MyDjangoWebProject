@@ -1,0 +1,91 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to upload My project in GitHub?</title>
+    <meta name="google-translate-customization" content="Learn how to upload your project in github" />
+</head>
+<body>
+    {% load staticfiles %}
+    <style>
+        strong {
+            color: green;
+            border: 3px solid green;
+        }
+        b {
+            color: chocolate;
+            border: 3px solid chocolate;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>    
+    <div class="container">
+        <div class="col-xs-12">
+            <h3 style="color:crimson"> I Promise that You will learn How to Upload Your Project in GitHub in <strong style="color:black; font-size:20px">2 minutes</strong>.</h3>
+            <h3> Step-1 </h3>
+            <h4> First SignIn to GitHub </h4>
+            <a href="https://github.com/login">Sign in to GitHub</a>
+        </div>
+        <div class="col-xs-12">
+            <h3> Step-2 </h3>
+            <h4> How to create a New Repositories </h4>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/G1.jpg'%}" />
+        </div><br />
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/G2.jpg'%}" />
+        </div><br />
+        <div class="col-xs-12">
+            <h3>Step-3</h3>
+            <h4> How to create a New Folder.</h4>
+            <p> Click On <strong>Create new file.</strong></p>
+            <p> Create Folder name followed by <b>   /   </b></p>
+            <p> Create a File name. </p>
+            <p> You can't Create a New Folder without Creating an Empty File. So create a empty New file.</p>
+            <p> Click On <strong>Commit new file</strong> to record your changes.</p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/G3.jpg'%}" />
+        </div><br />
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/G4.jpg'%}" />
+        </div><br />
+        <div class="col-xs-12">
+            <h3>Step-4</h3>
+            <h4> How to Upload a file.</h4>
+            <p> Click On <strong>Upload files</strong> then Click On <strong>Choose your files</strong></p>
+            <p> Select files that You needed.</p>
+            <p> Click On <strong>open</strong></p>
+            <p> Atlast Click On <strong>Commit changes</strong> to trecord your changes.</p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/G5.jpg'%}" />
+        </div><br />
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/G6.jpg'%}" />
+        </div><br />
+        <div class="col-xs-12">
+            <h3>Note:</h3>
+            <p> No Need to Upload Your <b>Python Virtual Environment Folder</b> and <b>other Empty Folders</b>.</p>
+            <p> Need to Upload <b>Static Folders</b> , <b>__pycache__ Folders</b> and <b>__init__ Files</b>.</p>
+            <p> In the below diagram <b>Red Marks</b> are Not Uploaded and <strong>Green Marks</strong> are Uploaded in GitHub.</p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/G7.jpg'%}" style="height:200%;" />
+        </div><br />
+        <div class="col-xs-12">
+           <p> Upload <strong>Green Marks</strong> in GitHub </p>
+           <p> Don't Upload <strong>Red Marks</strong> in GitHub </p>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock %}

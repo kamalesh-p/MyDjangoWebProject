@@ -1,0 +1,37 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <style>
+        body h4 a {
+            color: black;
+            background-color: violet;
+            height: 150px;
+        }
+    </style>
+    <h3> How to create my own Web application using Django in Python ? </h3>
+    <ul>
+    <li> I <strong>Promise</strong> that you learn how to create your <strong>Own Website</strong> and make in available in <strong>Google Search</strong>.</li>
+    <li> I will teach <strong>Everything step by step</strong>.</li>
+    <li> I <strong>Promise</strong> that you will learn to create your <strong>Own Web Application </strong> in <strong> 30 minutes </strong>.</li>
+    </ul>
+    <h3> Now I will show you the Frame work. How to create my website in 30 minutes using Django ? </h3>
+    <p><h4>Step-1 : </h4>Firstly <strong>Setup your Django module</strong> in your system.</p>
+    <p><h4>Step-2 : </h4>Secondly Develop your <strong>Django Application</strong>. Code in your Html file.</p>
+    <p><h4>Step-3 : </h4>Thirdly <strong>Upload</strong> your DjangoWebProject in <strong>GitHub.</strong></p>
+    <p><h4>Step-4 : </h4>Fourthly Host your Web Application with <strong> Free Trial Websites </strong>.</p>
+    <p><h4>Step-5 : </h4>Finally Verify Your Website in <strong>Google Console</strong>.</p>
+    <br />
+    <h4><a href="{% url 'vs' %}"> Next &raquo; </a></h4>
+</body>
+</html>
+
+{% endblock %}

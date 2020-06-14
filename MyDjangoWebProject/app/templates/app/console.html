@@ -1,0 +1,136 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Verify Your Account in Google Console</title>
+    <meta name="google-translate-customization" content="Learn how to verify your project in Google Console"/>
+</head>
+<body>
+    {% load staticfiles %}
+    <style>
+        img {
+            width:100%;
+            height:100%;
+        }
+        strong {
+            color: green;
+            border: 3px solid green;
+        }
+        b {
+            color: chocolate;
+            border: 3px solid chocolate;
+        }
+        cite {
+            color: black;
+            background-color: lavender;
+            border: 1px solid black;
+            text-wrap: inherit;
+            font-size: 20px;
+        }
+        i {
+            color:red;
+        }
+    </style>
+    <div class="container">
+        <div class="col-xs-12">
+            <h3 style="color:crimson">I am Promise that you can learn, How to Verify your Website in Google Console. </h3>
+            <h3>Step-1</h3>
+            <p><a href="https://search.google.com/search-console/not-verified?original_url=/search-console/settings&original_resource_id"></a>Google Console &raquo;</p>
+            <br />
+            <p>Click On <strong>Add property</strong></p>
+            <p>Again Click On <strong>Add property</strong></p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/c1.jpg'%}"/>
+        </div>
+        <div class="col-xs-12">
+            <h3>Step-2</h3>
+            <p>Switch to URL Prefix</p>
+            <i>( 1 )</i>
+            <p>Paste Your Website Link</p>
+            <b>https://yourLoginID.pythonanywhere.com</b>
+            <i>( 2 )</i>
+            <p>Press <strong>CONTINUE</strong></p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/c2.jpg'%}"/>
+        </div>
+        <div class="col-xs-12">
+            <h3>Step-3</h3>
+            <p>In HTML tag Press &nabla;</p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/c3.jpg'%}"/>
+        </div>
+        <div class="col-xs-12">
+            <h3>Step-4</h3>
+            <p>Now Click on <strong>Copy</strong>. </p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/c4.jpg'%}"/>
+        </div>
+        <div class="col-xs-12">
+            <h3>Step-5</h3>
+            <p>Now Goto <b>https://www.pythonanywhere.com/</b>(i.e.) Goto your pythonanywhere Hosting Website</p>
+            <p>Goto <strong>Files</strong>. </p>
+            <p>Goto layout.html in location <b>/home/yourLoginID/PythonDjangoWebProject/PythonDjangoWebProject/app/templates/app/layout.html</b></p>
+            <p>Click On <strong>pythonDjangoWebProject</strong> Folder. </p>
+            <p>Again Click On <strong>pythonDjangoWebProject</strong> Folder. </p>
+            <p>Now Click On <strong>app</strong> Folder. </p>
+            <p>And Click On <strong>templates</strong> Folder. </p>
+            <p>And Click On <strong>app</strong> Folder. </p>
+            <p>Atlast Click On <strong>layout.html</strong> File. </p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/c5.jpg'%}"/>
+        </div>
+        <div class="col-xs-12">
+            <h3>Step-6</h3>
+            <p>layout.html</p>
+            <p>&lt;head&gt;&lt;/head&gt;</p>
+            <p><strong>Paste the &lt;meta /&gt; tag</strong></p>
+            <p>Click On <strong>Save</strong></p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/c6.jpg'%}"/>
+        </div>
+        <div class="col-xs-12">
+            <h3>Reload Your Website</h3>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/P28.jpg'%}"/>
+        </div>
+        <div class="col-xs-12">
+            <h3>Step-7</h3>
+            <p>Now Goto Your <strong>Google Console Verification Site</strong>. </p>
+            <p>Click On <strong>Verify</strong>. </p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/c7.jpg'%}"/>
+        </div>
+        <div class="col-xs-12">
+            <h3>Step-8</h3>
+            <p>When <strong>Green box</strong> is displayed the process is successful.</p>
+            <p>When <b>Red box</b> is displayed Verification is not successful.</p>
+            <div>
+                <p>If verification is not Successful, Check the following</p>
+                <ul>
+                    <li>Whether you <strong>Saved</strong> your html file</li>
+                    <li>You <strong>Pasted</strong> the <b>&lt;meta&gt; tag</b> in &lt;head&gt;</li>
+                    <li>Check whether You pasted in your path open Html (i.e.) path('',views.index,name='index')    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/c8.jpg'%}"/>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock %}

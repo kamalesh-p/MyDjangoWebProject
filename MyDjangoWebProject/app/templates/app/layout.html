@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/bootstrap/sheets/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/bootstrap/sheets/site.css' %}" />
+    <script src="{% static 'app/bootstrap/scripts/modernizr-2.6.2.js' %}"></script>
+    <script src="{% static 'app/scripts/layout.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'app/styles/layout.css' %}" />
+    <style type="text/css">
+        #fixedtop li a {
+            color: black;
+        }
+    </style>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:violet; Color:black">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" id="fixedtop">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'setup' %}">Setup Django App</a></li>
+                    <li><a href="{% url 'upload' %}">Upload in GitHub</a></li>
+                    <li><a href="{% url 'host' %}">Hosting My Website</a></li>
+                    <li><a href="{% url 'console' %}">Google Console</a></li>
+                    <li><a href="{% url 'more' %}">More</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <header><h1 align="center">{{title}}</h1></header>
+        {% block content %}{% endblock %}
+        <hr/>
+        <footer>
+            <h6>&copy; {{ year }} - My Django Application</h6>
+        </footer>
+    </div>
+
+    <script src="{% static 'app/bootstrap/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/bootstrap/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/bootstrap/scripts/respond.js' %}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
