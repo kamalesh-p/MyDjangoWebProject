@@ -1,0 +1,94 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to setup my django project</title>
+    <meta name="google-translate-customization" content="Learn how to setup your django web project"/>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse" style="background-color:violet; Color:black">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" id="fixedtop">
+                    <li><a href="{% url 'vs' %}">Visual Studio 2019</a></li>
+                    <li><a href="{% url 'vscode' %}">Visual Studio Code</a></li>
+                    <li><a href="{% url 'pycharm' %}">PyCharm</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <h1 align="center">{{content}}</h1>
+        {% block setup %}{% endblock %}
+        <div>
+            <p>Here are some Website links using which I learnt Programming.</p>
+            <style>
+                table img {
+                    width:50px;
+                    height:50px;
+                    color:darkviolet;
+                }
+                table {
+                    border:5px solid violet;
+                }
+                td {
+                    border-left:5px solid violet;
+                }
+                tr {
+                    border-bottom: 5px solid violet;
+                }
+            </style>
+            <table>
+                <tr>
+                    <td>Programming Language</td>
+                    <td>Website Links</td>
+                    <td>Application</td>
+                </tr>
+                <tr>
+                    <!-- Django -->
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/1200px-Django_logo.svg.png"/>Django</td>
+                    <td><a href="https://docs.djangoproject.com/en/3.0/intro/tutorial01/" target="_blank"><img src="https://kevin-brown.com/images/django-logo.svg"/>Django basics</a></td>
+                    <td> No Idea </td>
+                </tr>
+                <tr>
+                    <!-- HTML -->
+                    <td><img src="https://www.sololearn.com/Icons/Courses/1014.png"/>HTML</td>
+                    <td><a href="https://www.w3schools.com/html/" target="_blank"><img src="https://webprogramacion.com/imgs_blog/160.jpg"/>W3 Schools</a></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.sololearn" target="_blank"><img src="https://lh3.googleusercontent.com/zwwddqxgFlP14DlucvBV52RUMA-cV3vRvmjf-iWqxuVhYVmB-l8XN9NDirb0687DSw=w300"/>Sololearn</a></td>
+                </tr>
+                <tr>
+                    <!-- JavaScript -->
+                    <td><img src="https://cdn4.iconfinder.com/data/icons/logos-3/504/javascript-512.png"/>JavaScript</td>
+                    <td><a href="https://www.w3schools.com/Js/"  target="_blank"><img src="http://www.userlogos.org/files/logos/Rog/w3schools.com_03.png" target="_blank"/>W3 Schools</a></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.sololearn" target="_blank"><img src="https://cdn.apkmonk.com/logos/com.sololearn.javascript_150x150.png"/>Sololearn</a></td>
+                </tr>
+                <tr>
+                    <!-- CSS -->
+                    <td><img src="http://vignette1.wikia.nocookie.net/logopedia/images/8/83/CSS_logo.svg/revision/latest/scale-to-width-down/250?cb=20141116040129"/>CSS</td>
+                    <td><a href="https://www.w3schools.com/css/" target="_blank"><img src="https://www.w3schools.com/css/w3css.gif"/>W3 Schools</a></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.sololearn" target="_blank"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/9e/d1/04/9ed10412-92b7-f670-3b9d-ccc0c6bad9da/source/512x512bb.jpg"/>Sololearn</a></td>
+                </tr>
+                <tr>
+                    <!-- jQuery -->
+                    <td><img src="https://www.sololearn.com/Icons/Courses/1082.png"/>jQuery</td>
+                    <td><a href="https://www.w3schools.com/jQuery/" target="_blank"><img src="http://www.userlogos.org/files/logos/Rog/w3schools.com_03.png"/>W3 Schools</a></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.sololearn" target="_blank"><img src="https://www.thedailystar.net/sites/default/files/feature/images/sololearn.jpg"/>Sololearn</a></td>
+                </tr>
+                <tr>
+                    <!--Bootstrap-->
+                    <td><img src="https://i1.wp.com/jfdi.info/wp-content/uploads/bootstrap.png?ssl=1"/>Bootstrap</td>
+                    <td><a href="https://www.w3schools.com/bootstrap/" target="_blank"><img src="http://www.userlogos.org/files/logos/Rog/w3schools.com_03.png"/>W3 Schools</a></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.sololearn" target="_blank"><img src="https://www.thedailystar.net/sites/default/files/feature/images/sololearn.jpg"/>Sololearn</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock %}

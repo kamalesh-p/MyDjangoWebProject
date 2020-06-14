@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+
+{% extends "app/setup/setup.html" %}
+
+{% block setup %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    {% load staticfiles %}
+    <style>
+        img {
+            width:100%;
+            height:25%;
+        }
+        #do {
+            color: green;
+            border: 3px solid green;
+        }
+        #high {
+            color: chocolate;
+            border: 3px solid chocolate;
+        }
+        #code, #settings1_py, #wsgi1_py, #urls1_py, #forms1_py, #tests1_py, #views1_py, #aurls1_py, #burls1_py, #basics1_py {
+            color: black;
+            background-color: lavender;
+            border: 1px solid black;
+            text-wrap: inherit;
+            font-size: 9px;
+        }
+        #change {
+            color: red;
+            background-color: navajowhite;
+            border: 3px solid red;
+        }
+        #box {
+            background-color: antiquewhite;
+        }
+        #under {
+            text-decoration: solid;
+        }
+        #files {
+            font-size:0px;
+            text-align:justify;
+        }
+    </style>
+    <div class="container" id="vs">
+        <div class="alert alert-info alert-dismissable"> I am Using Visual Studio 2019 version. You can use your own version. <a class="close" data-dismiss="alert" href="#"><strong style="font-size:18px">X</strong></a></div>
+        <div>
+            <h3 style="color:crimson">I am Promise that you can learn, How to Setup your Django Web Project in <cite style="font-size:18px; color:black">9 Steps</cite> in Visual Studio 2019 in <cite style="font-size:18px; color:black">10 minutes</cite></h3>
+        </div>
+        <div class="col-xs-12">
+            <h3> Step-1 </h3>
+            <h4> Download Visual Studio 2019 </h4>
+            <b> How to download <cite><strong style="font-size:18px;">Visual Studio 2019</strong></cite> in your System ? </b>
+            <br />
+            <a href="https://youtu.be/FBo5Cso-ufE" target="_blank"> Learn More &raquo; </a>
+        </div>
+        <div class="col-xs-12">
+            <h3> Step-2 </h3>
+            <h4> Open the Visual Studio 2019 <b id="do"> Continue Without Code </b> </h4>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/vs1.jpg' %}" alt="none" class="img-rounded"/>
+            <br />
+        </div>
+        <div class="col-xs-12">
+            <h3> Step-3 </h3>
+            <h4> Click On <b id="do"> Tools </b> and Click On <b id="do"> Get Tools and Features... </b>. You can see Visual Studio installer loading</h4>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/vs2.jpg' %}" alt="none" class="img-rounded"/>
+            <br />
+        </div>
+        <div class="col-xs-12">
+            <h3> Step-4 </h3>
+            <h4> Install these packages. For Python <b id="do"> #### </b> , Django Web Application <b id="do"> #### </b>, Django Frame work. <b id="do"> #### </b> </h4>
+            <p> Check whether you have proper net connection to download these packages. </p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/vs3.jpg' %}" alt="none" class="img-rounded"/>
+            <br />
+        </div>
+        <div class="col-xs-6">
+            <h3> Step-5 </h3>
+            <h4> Create a New Project with name <b id="high"> PythonDjangoWebProject. </b></h4>
+            <p> Now Click On <b id="do">File</b> and Click On <b id="do">New</b> and then Click On <b id="do">Project. </b></p>
+            <p> Now create a new <b id="high">Django Web Project</b></p>
+        </div>
+        <div class="col-xs-6">
+            <img src="{% static 'app/images/vs4.jpg' %}" alt="none" class="float-right" style="width:50%; height:200px;"/>
+            <br />
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/vs5.jpg' %}" alt="none" class="img-rounded"/>
+            <br />
+        </div>
+        <div class="col-xs-12">
+            <p> Create name as <b id="high"> PythonDjangoWebProject. </b></p>
+            <p> Don't change the Location of the project. Let it be the same. </p>
+            <p> Your Project will be created in this location <b id="high">C:/Users/#/source/repos/MyDjangoWebProject/</b></p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/vs6.jpg' %}" alt="none" class="img-rounded"/>
+            <br />
+        </div>
+        <div class="col-xs-12">
+            <h3> Step-6 </h3>
+            <h4> Now Setup Python Virtual Environment. Click On <b id="do"> Python Environment </b> and then Click On <b id="do"> Add Environment </b> </h4>
+            <p> Now create Python Virtual Environment </p>
+            <p> Name it as <b id="high">PythonVirtualEnvironment</b> </p>
+            <p> Wait till the installation complete. Orelse the Program doesn't work</p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/vs7.jpg' %}" alt="none" class="img-rounded"/>
+            <br />
+        </div>
+        <div class="col-xs-12">
+            <h4> Now follow the instrution given in <b id="high">Django Web App Configuration</b> </h4>
+            <p> Enter your <b id="high">Name</b> and <b id="high">Email</b> </p>
+            <p> Then enter <b id="high">password</b> and <b id="high">confirm password</b></p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/vs8.jpg' %}" alt="none" class="img-rounded"/>
+            <br />
+        </div>
+        <div class="col-xs-12">
+            <h3>Step-7</h3>
+            <h4>Run your Program</h4>
+            <p> Click On <b id="do"> ▶️ Web Server(Google Chrome) </b> to Run the Program </p>
+            <p> You can see a Django Home website like this.</p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/vs9.jpg' %}" alt="none" class="img-rounded"/>
+            <br />
+        </div>
+        <div class="col-xs-12">
+            <br /><br />
+            <h4>PythonDjangoWebProject/PythonDjangoWebProject/PythonDjangoWebProject</h4>
+            <p id="change"> In PythonDjangoWebProject Folder you need to work with <strong>urls.py</strong> and <strong>settings.py</strong> </p>
+        </div>
+        <div class="col-xs-12">
+            <h3>settings.py</h3>
+            <div class="col-xs-12">
+                <p>settings.py is used for updating your application.</p> 
+                <strong>Important datas</strong>
+                <strong>DEBUG = True</strong>
+                <p> Need to turn DEBUG to False. When your program is hosted to website. Orelse it will be easy for HACKERS to access your website.</p>
+                <strong>ALLOWED_HOSTS = []</strong>
+                <p> Need to type the host website while while hosting. </p>
+                <strong>INSTALLED_APPS = [app]</strong>
+                <p> You can add apps when you create it.</p>
+                <strong>TEMPLATES = [ { 'DIRS': [], } ... ]</strong>
+                <p> Update the location of INSTALLED_APPS in this DIRS:['C:/Users/santhosh kamalesh/source/repos/MyDjangoWebProject/MyDjangoWebProject/SecondApplication']</p>
+                <strong>STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))</strong>
+                <p> Need to Update Static Files Location During Hosting</p>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <h3>wsgi.py</h3>
+            <p id="change"> You need not change anything in this </p>
+            <div class="col-xs-12">
+                <p>wsgi.py is considered as your application.</p> 
+                <strong>application = get_wsgi_application()</strong>
+                <p> This is your application</p>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <h3>urls.py</h3>
+            <div class="col-xs-12">
+                <p>urls.py is considered as your application's URL.</p> 
+                <strong> Important datas</strong>
+                <strong> from django.urls import include </strong>
+                <p> You need to import Include from django.urls to include a new application </p>
+                <strong> urlpatterns = [ path('',include('app.urls')), path('admin/', admin.site.urls),] </strong>
+                <p> You can add the apps which you need to include in your PythonDjangoWebProject/PythonDjangoWebProject/PythonDjangoWebProject/urls.py</p>
+                <p><strong>Important note : </strong> You need to have only one empty path url like this, <strong> path('',include('app.urls'))</strong> others should have path url like this <strong> path('app1/',include('app1.urls')), path('app2/',include('app2.urls')), </strong></p>
+                <strong> Example code for you </strong>
+            <div class="col-xs-12" id="box">
+                <h3> PythonDjangoWebProject/PythonDjangoWebProject/PythonDjangoWebProject</h3>
+                <h3> urls.py </h3>
+                <input value="more..." type="button" id="burls1_in" onclick="show(6)" />
+                <input value="copy" type="button" onclick="copyToClipboard(6)" />
+                <div id="burls1_py"></div>
+            </div>
+            </div>
+        </div>
+        <div class="col-xs-12" id="change">
+            <strong>you can see this folder. This is same as your folder. So no need to copy and paste it in your program.</strong>
+        </div>
+        <div class="col-xs-12" id="box">
+            <h3> PythonDjangoWebProject/PythonDjangoWebProject/PythonDjangoWebProject</h3>
+            <div class="col-xs-12">
+                <h3> settings.py </h3>
+                <input value="more..." type="button" id="settings1_in" onclick="show(0)" />
+                <input value="copy" type="button" onclick="copyToClipboard(0)" />
+                <div id="settings1_py"></div>
+            </div>
+            <div class="col-xs-12">
+                <h3> wsgi.py </h3>
+                <input value="more..." type="button" id="wsgi1_in" onclick="show(1)" />
+                <input value="copy" type="button" onclick="copyToClipboard(1)" />
+                <div id="wsgi1_py"></div>
+            </div>
+            <div class="col-xs-12">
+                <h3> urls.py </h3>
+                <input value="more..." type="button" id="urls1_in" onclick="show(2)" />
+                <input value="copy" type="button" onclick="copyToClipboard(2)" />
+                <div id="urls1_py"></div>
+            </div>
+        </div>
+        <div class="col-xs-12"><br /><br /><br /><h4>PythonDjangoWebProject/PythonDjangoWebProject/app</h4></div>
+        <div class="col-xs-12">
+            <p id="change"> In app Folder you need to work with <strong>forms.py</strong> , <strong>models.py</strong> , <strong>urls.py</strong> and <strong>views.py</strong> </p>
+        </div>
+        <div class="col-xs-12">
+            <h3>forms.py</h3>
+            <div class="col-xs-12">
+                <p>You can create your forms in forms.py.</p> 
+                <p> You can work on this later. </p>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <h3>models.py</h3>
+            <div class="col-xs-12">
+                <p>You can create your models in models.py.</p> 
+                <p> You can work on this later. </p>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <h3>urls.py</h3>
+            <div class="col-xs-12">
+                <p>You can create your urls of HTML files here .</p> 
+                <p><strong>Important note : </strong> You need to have only one empty path url like this, <strong> path('',include('app.urls'))</strong> others should have path url like this <strong> path('app1/',include('app1.urls')), path('app2/',include('app2.urls')), </strong></p>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <h3>tests.py</h3>
+            <div class="col-xs-12">
+                <p id="change"> Now there is nothing to do with tests.py. </p>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <h3>views.py</h3>
+            <div class="col-xs-12">
+                <p>You can create your function's definition here in views.py.</p> 
+                <p> you need to add your definitions here to point HTML file. </p>
+            </div>
+        </div>
+        <div class="col-xs-12" id="change">
+            <strong>you can see this folder also. This is same as your folder. So no need to copy and paste it in your program.</strong>
+        </div>
+        <div class="col-xs-12" id="box">
+            <h3> PythonDjangoWebProject/PythonDjangoWebProject/app</h3>
+            <div class="col-xs-12">
+                <h3> forms.py </h3>
+                <input value="more..." type="button" id="forms1_in" onclick="show(3)" />
+                <input value="copy" type="button" onclick="copyToClipboard(3)" />
+                <div id="forms1_py"></div>
+            </div>
+            <div class="col-xs-12">
+                <h3> tests.py </h3>
+                <input value="more..." type="button" id="tests1_in" onclick="show(4)" />
+                <input value="copy" type="button" onclick="copyToClipboard(4)" />
+                <div id="tests1_py"></div>
+            </div>
+            <div class="col-xs-12">
+                <h3> views.py </h3>
+                <input value="more..." type="button" id="views1_in" onclick="show(5)" />
+                <input value="copy" type="button" onclick="copyToClipboard(5)" />
+                <div id="views1_py"></div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <h3>Step-8</h3>
+            <h4>How To load Static files in HTML file</h4>
+            <p>Now look at app/static folder.</p>
+            <p>Already you can see some javascript and CSS files in app/static folder.</p>
+            <p>They are known as <strong>bootstraps</strong> and <strong>jQuery</strong>.</p>
+            <p>You can find the links for html, javascript, CSS, jQuery, bootstraps in <strong>Step-9</strong>.</p>
+            <h4>Note:</h4>
+            <p>Before loading images, You need to Create a Folder named <strong id="high">images</strong> in <strong id="do">PythonDjangoWebProject/PythonDjangoWebProject/app/static/</strong> and paste any image.</p>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static 'app/images/vs10.jpg' %}" alt="none" class="img-rounded" style="height:300px; width:25%;"/>
+        </div>
+        <div class="col-xs-12" id="box">
+            <h3> Loading images, JavaScript, CSS </h3>
+            <div class="col-xs-12">
+                <input value="more..." type="button" id="basics1_in" onclick="show(7)" />
+                <input value="copy" type="button" onclick="copyToClipboard(7)" />
+                <div id="basics1_py"></div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <h3>Step-9</h3>
+            <h4>Now You are ready with Django Web Project</h4>
+            <p>Now let us upload our Project in <strong>GitHub</strong></p>
+            <h3><a href="{% url 'upload' %}">Upload Your Project in GitHub &raquo;</a></h3>
+        </div>
+    </div>
+    <div id="files" style="visibility:hidden;">
+        {{ files }}
+    </div>
+    <script>
+        function equalToArray(arrayE) {
+            arraysE = [];
+            for (i = 0; i < arrayE.length; i++)
+                arraysE[i] = arrayE[i];
+            return arraysE;
+        }
+        var tag = [], text = [], id = [], array = [], arrays = [], element = [], value = [], t = '';
+        id = ['settings', 'wsgi', 'urls', 'forms', 'tests', 'views', 'burls', 'basics'];
+        files = document.getElementById('files').textContent;
+        i = 0;
+        t = '';
+        for (j = 0; j < files.length; j++) {
+            if (files[j] == '~') {
+                array[id[i]] = t;
+                arrays[id[i]] = array[id[i]];
+                i++;
+                t = '';
+            }
+            else {
+                t += files[j]; 
+            }
+        }
+        function show(name) {
+            tag["input"] = document.getElementById(id[name] + '1' + '_in');
+            value["input"] = tag["input"].value;
+            i = name;
+            tag['div'] = document.getElementById(id[i] + '1' + '_py');
+            if (value["input"] == "more...") {
+                tag["div"].innerHTML = array[id[i]];
+                tag["input"].value = "less...";
+            }
+            else {
+                tag["div"].innerHTML = " ";
+                tag["input"].value = "more...";
+            }
+        }
+        function copyToClipboard(numb) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(arrays[id[numb]]).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+    </script>
+</body>
+</html>
+
+{% endblock %}
+
