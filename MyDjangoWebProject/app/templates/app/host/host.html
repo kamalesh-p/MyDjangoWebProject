@@ -1,0 +1,419 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>How to host my project in pythonanywhere?</title>
+    <meta name="google-translate-customization" content="Learn how to host your website with pythonanywhere"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {% load staticfiles %}
+    <style>
+        img {
+            width:100%;
+            height:100%;
+        }
+        strong {
+            color: green;
+            border: 3px solid green;
+        }
+        b {
+            color: chocolate;
+            border: 3px solid chocolate;
+        }
+        #code {
+            color: black;
+            background-color: lavender;
+            border: 1px solid black;
+            text-wrap: inherit;
+            font-size: 9px;
+        }
+        cite {
+            color: black;
+            background-color: lavender;
+            border: 1px solid black;
+            text-wrap: inherit;
+            font-size: 20px;
+        }
+        i {
+            color:red;
+        }
+    </style>
+    <div class="container" id="vs">
+        <div class="col-xs-12">
+            <h3 style="color:crimson">I am Promise that you can learn, How to Host your Django Web Project in <cite style="font-size:18px; color:black">6 Steps</cite> in pythonanywhere in <cite style="font-size:18px; color:black">10 minutes</cite></h3>
+            <h3 align="center">How to Host Your Project With pythonanywhere ?  </h3>
+        </div>
+        <div class="col-xs-12"><a href="https://www.pythonanywhere.com"> Login with pythonanywhere here</a></div>
+        <div class="col-xs-12">
+            <h3>Step-1</h3>
+            <p>Click On<strong>Sign up and try it out &raquo;</strong></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P1.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Click On<strong>Create a Beginner account</strong></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P2.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Fill your Details</p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P3.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <h3>step-2</h3>
+            <p>Click <strong>End tour</strong> and Click On <strong>Dashboard</strong></p>
+            <p>Now Click On <strong>Bash</strong></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P4.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            Now Bash Console is Created.
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P5.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Now copy the your <b>GitHub Website Link</b></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P6.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p><i>( 1 )</i></p>
+            <cite>git clone pastepath</cite>
+            <p><i>( 2 )</i></p>
+            <cite>mkvirtualenv --python=/usr/bin/python3.8 PythonVirtualEnvironment</cite>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P7.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p><i>( 3 )</i></p>
+            <cite>cd PythonDjangoWebProject</cite>
+            <p><i>( 4 )</i></p>
+            <cite>ls</cite>
+            <p><i>( 5 )</i></p>
+            <cite>cd PythonDjangoWebProject</cite>
+            <p><i>( 6 )</i></p>
+            <cite>ls</cite>
+            <p><i>( 7 )</i></p>
+            <cite>pip install -r requirements.txt</cite>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P8.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>These are the Install Packages.</p>
+            <p>It will take some time.</p>
+            <p>Click On<strong>web</strong>.</p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P9.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <h3>step-3</h3>
+            <p>Click On<strong>Add a new web app</strong></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P10.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>A window will be opened</p>
+            <p>Click On <strong>Next</strong></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P11.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Click On <strong>Manual Configuration</strong></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P12.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Click On<strong>python 3.8</strong></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P13.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p> Now Click On <strong>Next</strong></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P14.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p><h3>Note:1</h3> source code</p>
+            <p>Location of Your Project.</p>
+            <p><h3>Note:2</h3> Virtualenv</p>
+            <p>Location of Your Virtual Environment.</p>
+            <p><h3>Note:3</h3> Static files</p>
+            <p>Location of static files</p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P15.jpg" %}"/>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P16.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>My LoginID is HinKam20</p>
+            <i>( 1 )</i>
+            <cite>/home/yourLoginID/PythonDjangoWebProject/PythonDjangoWebProject</cite>
+            <i>( 2 )</i>
+            <cite>/home/yourLoginID/.virtualenvs/PythonVirtualEnvironment</cite>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P17.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <h3>Step-4</h3>
+            <p>My LoginID is HinKam20</p>
+            <p>Click On <strong>/var/www/yourLoginID_pythonanywhere_com_wsgi.py</strong></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P18.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p> Except <strong>Django</strong> Delete everything. </p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P19.jpg" %}"/>
+        </div>
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P20.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <i>( 1 )</i>
+            <p> Just For reference. </p>
+            <cite>/home/yourLoginID/PythonDjangoWebProject/PythonDjangoWebProject/manage.py</cite>
+            <i>( 2 )</i>
+            <p> Path of Your Project. </p>
+            <cite>/home/yourLoginID/PythonDjangoWebProject/PythonDjangoWebProject</cite>
+            <i>( 3 )</i>
+            <p> settings.py Location. </p>
+            <cite>PythonDjangoWebProject.settings</cite>
+            <div id="code">
+                <p>import os</p>
+                <p>import sys</p>
+                <p>path = '/home/yourLoginID/PythonDjangoWebProject/PythonDjangoWebProject'</p>
+                <p>if path not in sys.path:</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;sys.path.append(path)</p>
+                <p>os.environ['DJANGO_SETTINGS_MODULE'] = 'PythonDjangoWebProject.settings'</p>
+                <p>from django.core.wsgi import get_wsgi_application </p>
+                <p>application = get_wsgi_application()</p>
+            </div>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P21.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>My LoginID is HinKam20</p>
+            <i>( 1 )</i>
+            <p> You need to Reload Your Website always after making changes. </p>
+            <p>Click On <strong>&sect; Reload yourLoginID pythonanywhere.com</strong></p>
+            <i>( 2 )</i>
+            <p>Now Click On <b>Configuration</b> <strong>yourLoginID.pythonanywhere.com</strong>.</p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P28.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Now you can see error !</p>
+            <i>DisallowedHost at/</i>
+            <p>Now copy the <b>Website Link</b></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P23.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <h3>Step-5</h3>
+            <p>Goto <strong>Files</strong></p>
+            <p>Click On <strong>PythonDjangoWebProject/</strong></p>
+            <p>Click On <strong>PythonDjangoWebProject/</strong></p>
+            <p>Click On <strong>PythonDjangoWebProject/</strong></p>
+            <p>You can see <b>settings.py</b> in this folder</p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P24.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Click On <strong>settings.py</strong> file</p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P25.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Look at ALLOWED_HOSTS</p>
+            <p><strong>Paste the Website Link Here.</strong></p>
+            <cite>ALLOWED_HOSTS = ['https://yourLoginID.pythonanywhere.com/']</cite>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P26.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Look at ALLOWED_HOSTS</p>
+            <p><b>Edit ALLOWED_HOSTS.</b></p>
+            <cite>ALLOWED_HOSTS = ['yourLoginID.pythonanywhere.com']</cite>
+            <p>Click On <strong>Save</strong></p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P27.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>My LoginID is HinKam20</p>
+            <i>( 1 )</i>
+            <p> You need to Reload Your Website always after making changes. </p>
+            <p>Click On <strong>&sect; yourLoginID pythonanywhere.com</strong></p>
+            <i>( 2 )</i>
+            <p>Now Click On <b>Configuration</b> <strong>yourLoginID.pythonanywhere.com</strong>.</p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P28.jpg" %}"/>
+        </div>
+        <br />
+        <div>
+            <p> Now You can See a Website With Static Files Unloaded.</p>
+            <p> Your <b>Static files</b> such as JavaScript, CSS, Bootstraps, jQuery, images are not loaded.</p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P29.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <h3>Step-6</h3>
+            <p> My LoginID is HinKam20. </p>
+            <p> Edit <b>settings.py</b> again.</p>
+            <p> Edit STATIC_ROOT</p>
+            <cite>STATIC_ROOT = '/home/yourLoginID/PythonDjangoWebProject/PythonDjangoWebProject/static'</cite>
+            <p>Copy the Static location to paste it in web. </p>
+            <p>Don't forget to Save it.</p>
+            <p>Click On <strong>Save</strong>. </p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P30.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <i>( 1 )</i>
+            <p>Now Click On <strong>Consoles</strong>. </p>
+            <i>( 2 )</i>
+            <p>And Click On <strong>Bash console 12345678</strong> in Your consoles. </p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P22.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <cite>ls</cite>
+            <p>Check whether you are in the right directory <b>PythonDjangoWebProject/PythonDjangoWebProject/</b> </p>
+            <cite>python manage.py collectstatic</cite>
+            <p>Now Static files will be collected and loaded in this loction <b>/home/yourLoginID/PythonDjangoWebProject/PythonDjangoWebProject/static</b>. </p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P31.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Paste the copied path in static files</p>
+            <p>urls</p>
+            <cite>/static/</cite>
+            <p>Directory</p>
+            <cite>/home/yourLoginID/PythonDjangoWebProject/PythonDjangoWebProject/static</cite>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P32.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>My LoginID is HinKam20</p>
+            <i>( 1 )</i>
+            <p> You need to Reload Your Website always after making changes. </p>
+            <p>Click On <strong>&sect; yourLoginID pythonanywhere.com</strong></p>
+            <i>( 2 )</i>
+            <p>Now Click On <b>Configuration</b> <strong>yourLoginID.pythonanywhere.com</strong>.</p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P28.jpg" %}"/>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <p>Your website will be loaded along with Static files</p>
+        </div>
+        <br />
+        <div class="col-xs-12">
+            <img src="{% static "app/images/P33.jpg" %}"/>
+        </div>
+        <h3>Here is My Website Created by this method. </h3>
+        <p><a href="https://HinKam20.pythonanywhere.com">https://HinKam20.pythonanywhere.com</a></p>
+    </div>
+</body>
+</html>
+
+{% endblock %}
